@@ -1,16 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const AppHeader = () => <h1>My TODO List</h1>;
-const SearchPanel = () => <input type="text" placeholder='search'/>;
-const TodoList = () => {
-    return (
-        <ul>
-            <li>Learn React </li>
-            <li>Build Awesome App</li>
-        </ul>
-    )
-};
+import AppHeader from './components/app-header'
+import SearchPanel from './components/search-panel'
+import TodoList from './components/todo-list'
+
+
 
 const App = () => {
     return (
@@ -23,4 +18,4 @@ const App = () => {
 };
 
 
-ReactDOM.render(<App/>, document. getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
