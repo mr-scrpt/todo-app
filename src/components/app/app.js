@@ -50,7 +50,7 @@ export default class App extends Component {
         this.setState(({ todoData }) =>{
             const res = todoData.map(item => {
 
-                let clone = item;
+                let clone = {...item};
                 if (item.id === id){
                     clone[propName] = !clone[propName];
                 }
